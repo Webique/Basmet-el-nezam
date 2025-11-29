@@ -4,16 +4,16 @@ import type { Locale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
-import AboutSection from "@/components/sections/about-section";
-import CTASection from "@/components/sections/cta-section";
-import HeroSection from "@/components/sections/hero-section";
-import PortfolioSection from "@/components/sections/portfolio-section";
-import ServicesSection from "@/components/sections/services-section";
-import TeamSection from "@/components/sections/team-section";
-import TestimonialsSection from "@/components/sections/testimonials-section";
-import ValuesSection from "@/components/sections/values-section";
-import WhyUsSection from "@/components/sections/why-us-section";
 import WhatsAppFloat from "@/components/whatsapp-float";
+import AboutSection from "./components/about-section";
+import CTASection from "./components/cta-section";
+import HeroSection from "./components/hero-section";
+import PortfolioSection from "./components/portfolio-section";
+import ServicesSection from "./components/services-section";
+import TeamSection from "./components/team-section";
+import TestimonialsSection from "./components/testimonials-section";
+import ValuesSection from "./components/values-section";
+import WhyUsSection from "./components/why-us-section";
 
 export default function IndexPage({ params }: PageProps) {
   const { locale } = use(params);

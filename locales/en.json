@@ -226,11 +226,14 @@
     "marketing": "Corporate Law",
     "development": "Litigation",
     "consulting": "Legal Consultation",
-    "saudiArabia": "Riyadh, Saudi Arabia",
+    "saudiArabia": "Al-Wasita District - Opposite the General Court",
     "available24_7": "Available 24/7",
     "followMe":"Follow Us",
     "socialMedia": {
       "instagram": "Instagram",
+      "snapchat": "Snapchat",
+      "x": "X",
+      "tiktok": "TikTok",
       "linkedin": "LinkedIn",
       "email": "Email",
       "whatsapp": "WhatsApp"

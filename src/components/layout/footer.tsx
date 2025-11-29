@@ -4,9 +4,10 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 
-import Email from "@/assets/icons/email.svg";
 import Instagram from "@/assets/icons/instagram.svg";
-import LinkedIn from "@/assets/icons/linkedin.svg";
+import Snapchat from "@/assets/icons/snapchat.svg";
+import Tiktok from "@/assets/icons/tiktok.svg";
+import X from "@/assets/icons/x.svg";
 import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 
@@ -18,36 +19,36 @@ const Footer = () => {
     { label: t("home"), href: "/" },
     { label: t("about"), href: "#about" },
     { label: t("myservices"), href: "#services" },
-    { label: t("myportfolio"), href: "#portfolio" }
+    { label: t("myportfolio"), href: "#portfolio" },
   ];
 
   const services = [
     { label: t("marketing"), href: "#services" },
     { label: t("development"), href: "#services" },
-    { label: t("consulting"), href: "#services" }
+    { label: t("consulting"), href: "#services" },
   ];
 
   const socialLinks = [
     {
       icon: Instagram,
       href: siteConfig.links.instagram,
-      label: t("socialMedia.instagram")
+      label: t("socialMedia.instagram"),
     },
     {
-      icon: LinkedIn,
-      href: siteConfig.links.linkedin,
-      label: t("socialMedia.linkedin")
+      icon: Tiktok,
+      href: siteConfig.links.tiktok,
+      label: t("socialMedia.tiktok"),
     },
     {
-      icon: Email,
-      href: `mailto:${siteConfig.support.email}`,
-      label: t("socialMedia.email")
+      icon: Snapchat,
+      href: siteConfig.links.snapchat,
+      label: t("socialMedia.snapchat"),
     },
     {
-      icon: Phone,
-      href: `tel:${siteConfig.support.phone}`,
-      label: t("socialMedia.whatsapp")
-    }
+      icon: X,
+      href: siteConfig.links.x,
+      label: t("socialMedia.x"),
+    },
   ];
 
   return (
@@ -67,10 +68,11 @@ const Footer = () => {
             className="lg:col-span-4"
           >
             <Logo
-              imgClassName="w-24 filter invert brightness-0 lg:w-28"
+              imgClassName="w-24 lg:w-28"
               className="mb-5"
               width={333}
               height={197}
+              src="/images/logos/1.png"
             />
             <p className="text-secondary-foreground/70 mb-6 max-w-sm text-sm leading-relaxed">
               {t("companyDescription")}
@@ -219,38 +221,6 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Certificate Badge */}
-              <m.div
-                whileHover={{ scale: 1.02 }}
-                className="border-secondary-foreground/20 bg-secondary-foreground/5 mt-6 rounded-xl border p-4"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="bg-primary flex h-12 w-12 shrink-0 items-center justify-center rounded-lg shadow-lg">
-                    <svg
-                      className="text-primary-foreground h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-secondary-foreground/60 text-xs font-medium uppercase tracking-wide">
-                      {t("gacaCertified")}
-                    </div>
-                    <div className="text-secondary-foreground text-base font-bold">
-                      {t("certificateNumber")}
-                    </div>
-                  </div>
-                </div>
-              </m.div>
             </div>
           </m.div>
         </div>
