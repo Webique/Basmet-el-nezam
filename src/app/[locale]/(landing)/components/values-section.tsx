@@ -1,20 +1,12 @@
 "use client";
 
-import { Award, Eye, Heart, Lightbulb, Lock, Target } from "lucide-react";
+import { Award, Eye, Target } from "lucide-react";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function ValuesSection() {
   const t = useTranslations("IndexPage.values");
-
-  const values = [
-    { icon: Heart, label: t("values.integrity") },
-    { icon: Lock, label: t("values.confidentiality") },
-    { icon: Target, label: t("values.commitment") },
-    { icon: Award, label: t("values.efficiency") },
-    { icon: Lightbulb, label: t("values.innovation") }
-  ];
 
   return (
     <section className="relative overflow-hidden bg-gray-50 py-20 lg:py-28">
@@ -106,27 +98,12 @@ export default function ValuesSection() {
             <div className="bg-primary mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl shadow-md">
               <Award className="text-primary-foreground h-7 w-7" />
             </div>
-            <h3 className="group-hover:text-primary mb-4 text-xl font-bold text-gray-900 transition-colors">
+            <h3 className="group-hover:text-primary mb-3 text-xl font-bold text-gray-900 transition-colors">
               {t("values.title")}
             </h3>
-            <div className="space-y-3">
-              {values.map((value, index) => {
-                const Icon = value.icon;
-                return (
-                  <div
-                    key={index}
-                    className="group/item hover:bg-primary/5 flex items-center gap-3 rounded-lg p-2 transition-colors"
-                  >
-                    <div className="bg-primary/10 flex h-8 w-8 items-center justify-center rounded-lg">
-                      <Icon className="text-primary h-4 w-4" />
-                    </div>
-                    <span className="group-hover/item:text-primary font-medium text-gray-700 transition-colors">
-                      {value.label}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
+            <p className="leading-relaxed text-gray-600">
+              {t("values.description")}
+            </p>
           </m.div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
 import WhatsAppFloat from "@/components/whatsapp-float";
+
 import AboutSection from "./components/about-section";
 import CTASection from "./components/cta-section";
 import HeroSection from "./components/hero-section";

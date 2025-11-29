@@ -124,23 +124,13 @@
       },
       "values": {
         "title": "Our Values",
+        "description": "Integrity, confidentiality, commitment, efficiency, and innovation are the pillars of our client service.",
         "integrity": "Integrity",
         "confidentiality": "Confidentiality",
         "commitment": "Commitment",
         "efficiency": "Efficiency",
         "innovation": "Legal Innovation"
       }
-    },
-    "team": {
-      "title": "Our Legal Team",
-      "subtitle": "Elite Lawyers and Consultants",
-      "description": "Our legal team comprises elite lawyers and consultants with diverse experience in various legal fields, committed to providing accurate and reliable legal solutions that comply with local and international regulations.",
-      "description2": "We don't just provide consultations and litigation, but we ensure to provide comprehensive legal strategies aimed at protecting our clients' interests and achieving their goals efficiently and professionally.",
-      "expertise1": "Handling Complex Cases",
-      "expertise2": "Contract Drafting",
-      "expertise3": "Company Formation",
-      "expertise4": "Arbitration & Dispute Resolution",
-      "expertise5": "Continuous Legal Follow-up"
     },
     "testimonials": {
       "title": "Testimonials",
