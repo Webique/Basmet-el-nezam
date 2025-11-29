@@ -89,7 +89,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="relative order-last lg:order-first"
+            className="relative order-last"
           >
             <m.div className="ring-primary/20 group relative h-64 overflow-hidden rounded-2xl shadow-xl ring-2 sm:h-80 lg:h-[600px]">
               <ExportedImage
