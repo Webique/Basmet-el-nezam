@@ -139,15 +139,16 @@ export default function TeamSection() {
             <m.div
               initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.05 }}
               className="absolute -bottom-6 -start-6 rounded-2xl border border-white/30 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
             >
               <div className="text-center">
-                <div className="text-primary mb-1 text-4xl font-bold">15+</div>
+                <div className="text-primary mb-1 text-4xl font-bold">
+                  {t("experience_years")}
+                </div>
                 <div className="text-sm font-semibold text-gray-600">
-                  Years Experience
+                  {t("experience_title")}
                 </div>
               </div>
             </m.div>

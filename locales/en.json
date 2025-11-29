@@ -1,6 +1,6 @@
 {
   "IndexPage": {
-  "hero": {
+    "hero": {
       "title": "Where Justice Meets Excellence",
       "subtitle": "Basmet Al-Nezam Law Firm",
       "tagline": "We Leave Our Mark",
@@ -9,17 +9,17 @@
       "ctaSecondary": "Learn More"
     },
     "about": {
-        "title": "About Bassama Al-Nizam",
-        "subtitle": "Bassama Al-Nizam Law Office",
-        "description": "Bassama Al-Nizam Law Office for Legal Advocacy and Consultation is considered a leading reference in providing specialized legal services, combining deep expertise and enlightened vision to achieve justice and protect rights.",
-        "description2": "The office distinguishes itself by providing integrated legal consultations in commercial cases, criminal cases, and personal status matters, while committed to defending women's rights and human rights. It serves a wide range of clients providing effective legal solutions based on professionalism and precision.",
-        "description3": "With its classic elegant style, the office seeks to leave a distinctive mark in the field of law, embodying values of justice and integrity, and is keen on building relationships based on trust and credibility with its clients.",
-        "title2": "We are a Saudi Company",
-        "subtitle2": "We combine deep systematic expertise and renewed legal vision",
-        "description4": "Specialized in providing legal services and consultations with high professionalism and providing comprehensive legal solutions for individuals and companies, and we believe that trust and credibility are the foundation of legal success.",
-        "description5": "We are more than just a law firm; we are a strategic legal partner that provides precise solutions and builds trust with expertise and paves the path of justice with professionalism.",
-        "description6": "We believe that trust is built on details and that every case is a responsibility carefully managed and handled with complete confidentiality.",
-        "description7": "Therefore, we are committed to ensuring that our legal mark is clear in work quality and professional performance."
+      "title": "About Bassama Al-Nizam",
+      "subtitle": "Bassama Al-Nizam Law Office",
+      "description": "Bassama Al-Nizam Law Office for Legal Advocacy and Consultation is considered a leading reference in providing specialized legal services, combining deep expertise and enlightened vision to achieve justice and protect rights.",
+      "description2": "The office distinguishes itself by providing integrated legal consultations in commercial cases, criminal cases, and personal status matters, while committed to defending women's rights and human rights. It serves a wide range of clients providing effective legal solutions based on professionalism and precision.",
+      "description3": "With its classic elegant style, the office seeks to leave a distinctive mark in the field of law, embodying values of justice and integrity, and is keen on building relationships based on trust and credibility with its clients.",
+      "title2": "We are a Saudi Company",
+      "subtitle2": "We combine deep systematic expertise and renewed legal vision",
+      "description4": "Specialized in providing legal services and consultations with high professionalism and providing comprehensive legal solutions for individuals and companies, and we believe that trust and credibility are the foundation of legal success.",
+      "description5": "We are more than just a law firm; we are a strategic legal partner that provides precise solutions and builds trust with expertise and paves the path of justice with professionalism.",
+      "description6": "We believe that trust is built on details and that every case is a responsibility carefully managed and handled with complete confidentiality.",
+      "description7": "Therefore, we are committed to ensuring that our legal mark is clear in work quality and professional performance."
     },
     "services": {
       "title": "Our Services",
@@ -89,52 +89,18 @@
         "description": "Fully licensed and regulated by Saudi authorities, ensuring the highest standards of legal practice and client protection."
       }
     },
-    "cta": {
-      "title": "Need Legal Assistance?",
-      "description": "Contact us today for a consultation with our experienced legal team.",
-      "button": "Schedule Consultation"
-    },
-    "portfolio": {
-      "title": "Our Work",
-      "subtitle": "Successful Cases",
-      "description": "A selection of our successful legal cases and achievements.",
-      "case1": {
-        "title": "Corporate Merger Success",
-        "category": "Corporate Law"
-      },
-      "case2": {
-        "title": "Commercial Dispute Resolution",
-        "category": "Litigation"
-      },
-      "case3": {
-        "title": "International Arbitration",
-        "category": "Arbitration"
-      },
-      "case4": {
-        "title": "Regulatory Compliance",
-        "category": "Compliance"
-      }
-    },
-    "values": {
-      "title": "Our Legal Identity",
-      "subtitle": "Our Values, Vision, and Mission",
-      "vision": {
-        "title": "Our Vision",
-        "description": "Providing legal services that keep pace with legislative development and achieve justice with trust and credibility"
-      },
-      "mission": {
-        "title": "Our Mission",
-        "description": "We strive to make justice and professionalism your companion in every legal path"
-      },
-      "values": {
-        "title": "Our Values",
-        "description": "Integrity, confidentiality, commitment, efficiency, and innovation are the pillars of our client service.",
-        "integrity": "Integrity",
-        "confidentiality": "Confidentiality",
-        "commitment": "Commitment",
-        "efficiency": "Efficiency",
-        "innovation": "Legal Innovation"
-      }
+    "team": {
+      "title": "Our Legal Team",
+      "subtitle": "An Elite Group of Lawyers and Consultants",
+      "description": "Our legal team includes a selection of lawyers and consultants with diverse experience in various legal fields, committed to providing accurate and reliable legal solutions that comply with local and international regulations.",
+      "description2": "We not only provide consultations and litigation but also ensure to offer comprehensive legal strategies aimed at protecting our clients' interests and achieving their goals with efficiency and professionalism.",
+      "expertise1": "Handling Complex Cases",
+      "expertise2": "Contract Drafting",
+      "expertise3": "Company Formation",
+      "expertise4": "Arbitration & Dispute Resolution",
+      "expertise5": "Continuous Legal Follow-up",
+      "experience_years": "15+",
+      "experience_title": "Years Experience"
     },
     "testimonials": {
       "title": "Testimonials",
@@ -145,7 +111,6 @@
         "content": "Exceptional legal expertise and professionalism. They handled our corporate matters with great care and attention to detail."
       },
       "testimonial2": {
-        "name": "Fatima Al-Zahrani",
         "role": "Business Owner",
         "content": "Outstanding service and results. The team was always available and provided clear guidance throughout our legal process."
       },
