@@ -5,7 +5,7 @@ import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function AboutSection() {
-  const t = useTranslations("LandingPage.about");
+  const t = useTranslations("IndexPage.about");
 
   const stats = [
     { value: "15+", label: t("experience") },
@@ -17,7 +17,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-white py-20 lg:py-32"
+      className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 py-20 lg:py-32"
     >
       {/* Background Pattern */}
       <div className="absolute end-0 top-0 h-full w-1/2 opacity-5">
@@ -62,7 +62,7 @@ export default function AboutSection() {
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05, z: 10 }}
-                  className="relative aspect-square overflow-hidden rounded-2xl shadow-xl ring-2 ring-primary/20"
+                  className="ring-primary/20 relative aspect-square overflow-hidden rounded-2xl shadow-xl ring-2"
                 >
                   <ExportedImage
                     src="/images/1.png"
@@ -70,7 +70,7 @@ export default function AboutSection() {
                     fill
                     className="object-cover transition-transform duration-500"
                   />
-                  <div className="from-primary/20 absolute inset-0 bg-linear-to-t to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <div className="from-primary/20 bg-linear-to-t absolute inset-0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 </m.div>
                 <m.div
                   initial={{ opacity: 0, y: 30 }}
@@ -78,7 +78,7 @@ export default function AboutSection() {
                   transition={{ duration: 0.6, delay: 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
-                  className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl ring-2 ring-primary/20"
+                  className="ring-primary/20 relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl ring-2"
                 >
                   <ExportedImage
                     src="/images/4.png"
@@ -95,7 +95,7 @@ export default function AboutSection() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
-                  className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl ring-2 ring-primary/20"
+                  className="ring-primary/20 relative aspect-[4/3] overflow-hidden rounded-2xl shadow-xl ring-2"
                 >
                   <ExportedImage
                     src="/images/13.png"
@@ -110,7 +110,7 @@ export default function AboutSection() {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
-                  className="relative aspect-square overflow-hidden rounded-2xl shadow-xl ring-2 ring-primary/20"
+                  className="ring-primary/20 relative aspect-square overflow-hidden rounded-2xl shadow-xl ring-2"
                 >
                   <ExportedImage
                     src="/images/2.png"
@@ -144,12 +144,12 @@ export default function AboutSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="bg-primary/10 text-primary inline-block rounded-full px-4 py-2 text-sm font-semibold"
+                className="bg-primary/15 text-primary border-primary/20 inline-block rounded-full border px-5 py-2.5 text-sm font-bold shadow-sm"
               >
                 {t("title")}
               </m.div>
 
-              <h2 className="text-4xl font-bold text-gray-900 lg:text-5xl">
+              <h2 className="text-4xl font-extrabold text-gray-900 lg:text-5xl">
                 {t("subtitle")}
               </h2>
 
@@ -176,12 +176,12 @@ export default function AboutSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-linear-to-br rounded-2xl border border-gray-200 from-gray-50 to-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg"
+                  className="bg-linear-to-br hover:border-primary/20 rounded-2xl border border-gray-200/50 from-white to-gray-50/50 p-6 shadow-md transition-all duration-300 hover:shadow-xl"
                 >
-                  <div className="text-primary text-3xl font-bold lg:text-4xl">
+                  <div className="text-primary text-3xl font-extrabold lg:text-4xl">
                     {stat.value}
                   </div>
-                  <div className="mt-2 text-sm font-medium text-gray-600">
+                  <div className="mt-2 text-sm font-semibold text-gray-700">
                     {stat.label}
                   </div>
                 </m.div>

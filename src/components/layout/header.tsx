@@ -39,17 +39,18 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        "bg-background/95 border-border/50 border-b backdrop-blur-xl",
-        "lg:border-none",
+        "bg-background/98 border-border/50 fixed inset-x-0 top-0 z-50 border-b shadow-lg shadow-black/5 backdrop-blur-2xl transition-all duration-500 lg:border-none",
         isScrolled
-          ? "lg:bg-background/95 lg:border-border/50 lg:border-b lg:backdrop-blur-xl"
-          : "lg:bg-transparent lg:backdrop-blur-sm"
+          ? "lg:bg-background/90 lg:border-border/50 lg:border-b lg:shadow-xl lg:shadow-black/10 lg:backdrop-blur-2xl"
+          : "lg:bg-transparent lg:shadow-none lg:backdrop-blur-md"
       )}
     >
+      {/* Elegant top accent line */}
+      <div className="via-primary/50 absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent to-transparent" />
+
       {/* Main Header */}
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between lg:h-24">
+        <div className="flex h-20 items-center justify-between lg:h-24">
           {/* Logo */}
           <m.div
             initial={{ opacity: 0, x: -20 }}
@@ -61,7 +62,7 @@ export default function Header() {
           </m.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center gap-1 lg:flex">
             {navItems.map((item, index) => (
               <m.div
                 key={index}
@@ -72,12 +73,18 @@ export default function Header() {
                 <Link
                   href={item.href}
                   className={cn(
-                    "hover:text-primary relative text-lg font-semibold text-white transition-colors",
-                    "before:bg-primary before:absolute before:-bottom-1 before:start-0 before:h-0.5 before:w-0",
-                    "before:transition-all before:duration-300 hover:before:w-full"
+                    "group relative px-4 py-2 text-base font-medium text-white transition-all duration-300",
+                    "hover:text-primary",
+                    "before:absolute before:bottom-0 before:start-1/2 before:h-0.5 before:w-0",
+                    "before:from-primary before:to-primary/60 before:bg-gradient-to-r",
+                    "before:-translate-x-1/2 before:transition-all before:duration-300",
+                    "hover:before:w-3/4",
+                    "after:bg-primary/5 after:absolute after:inset-0 after:rounded-lg",
+                    "after:opacity-0 after:transition-opacity after:duration-300",
+                    "hover:after:opacity-100"
                   )}
                 >
-                  {item.label}
+                  <span className="relative z-10">{item.label}</span>
                 </Link>
               </m.div>
             ))}
@@ -94,7 +101,7 @@ export default function Header() {
 
             <div className="flex items-center">
               <Button
-                className="bg-primary shadow-primary/20 hover:shadow-primary/30 hover:bg-primary/90 hidden h-auto items-center gap-2 rounded-full px-8 py-4 text-base font-bold text-black shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl has-[>svg]:px-8 lg:flex"
+                className="ring-primary/20 shadow-primary/30 hover:shadow-primary/40 group h-auto gap-2 rounded-full px-8 py-4 text-base font-bold shadow-md ring-2 transition-all duration-300 hover:scale-105 hover:shadow-lg has-[>svg]:px-8 lg:flex"
                 asChild
               >
                 <Link
@@ -160,21 +167,25 @@ export default function Header() {
           transition={{ duration: 0.3 }}
           className="overflow-hidden lg:hidden"
         >
-          <nav className="border-border space-y-4 border-t py-4">
-            <div className="space-y-4 px-4">
+          <nav className="border-border/50 space-y-2 border-t py-4">
+            <div className="space-y-2 px-4">
               {navItems.map((item, index) => (
                 <m.div
                   key={index}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{
+                    opacity: isMenuOpen ? 1 : 0,
+                    x: isMenuOpen ? 0 : -20
+                  }}
                   transition={{ delay: 0.1 * index, duration: 0.4 }}
                 >
                   <Link
                     href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="text-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary block rounded-lg px-4 py-3 text-base font-medium transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2"
+                    className="text-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary group relative block rounded-lg px-4 py-3 text-base font-medium transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2"
                   >
-                    {item.label}
+                    <span className="relative z-10">{item.label}</span>
+                    <div className="from-primary/5 absolute inset-0 rounded-lg bg-gradient-to-r to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                   </Link>
                 </m.div>
               ))}
@@ -182,12 +193,15 @@ export default function Header() {
               {/* CTA in Mobile Menu */}
               <m.div
                 initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
+                animate={{
+                  opacity: isMenuOpen ? 1 : 0,
+                  y: isMenuOpen ? 0 : -20
+                }}
                 transition={{ delay: 0.5, duration: 0.4 }}
-                className="border-t pt-4"
+                className="border-border/50 border-t pt-4"
               >
                 <Button
-                  className="bg-primary h-auto w-full items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl has-[>svg]:px-6"
+                  className="bg-primary ring-primary/20 h-auto w-full items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold shadow-xl ring-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl has-[>svg]:px-6"
                   asChild
                 >
                   <a

@@ -6,7 +6,7 @@ import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function TeamSection() {
-  const t = useTranslations("LandingPage.team");
+  const t = useTranslations("IndexPage.team");
 
   const expertise = [
     t("expertise1"),
@@ -17,7 +17,7 @@ export default function TeamSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-secondary py-20 lg:py-32">
+    <section className="bg-secondary relative overflow-hidden py-20 lg:py-32">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <ExportedImage
@@ -60,7 +60,7 @@ export default function TeamSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="bg-primary/10 text-primary inline-block rounded-full px-4 py-2 text-sm font-semibold"
+                className="bg-primary/10 text-primary inline-block rounded-full px-5 py-2 text-sm font-semibold"
               >
                 {t("title")}
               </m.div>
@@ -87,17 +87,13 @@ export default function TeamSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  whileHover={{ x: 5, scale: 1.02 }}
+                  whileHover={{ x: 5 }}
                   className="group flex items-center gap-3 rounded-lg p-2 transition-all duration-300 hover:bg-white/5"
                 >
-                  <m.div
-                    whileHover={{ scale: 1.2, rotate: 360 }}
-                    transition={{ duration: 0.5 }}
-                    className="bg-primary flex h-8 w-8 shrink-0 items-center justify-center rounded-full shadow-lg ring-2 ring-primary/30"
-                  >
+                  <div className="bg-primary flex h-8 w-8 shrink-0 items-center justify-center rounded-full shadow-md">
                     <CheckCircle className="text-primary-foreground h-5 w-5" />
-                  </m.div>
-                  <span className="text-secondary-foreground text-lg font-medium transition-colors group-hover:text-primary">
+                  </div>
+                  <span className="text-secondary-foreground group-hover:text-primary text-base font-medium transition-colors">
                     {item}
                   </span>
                 </m.div>
@@ -112,12 +108,12 @@ export default function TeamSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.02 }}
-            className="relative perspective-1000"
+            className="perspective-1000 relative"
           >
             <m.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="relative aspect-square overflow-hidden rounded-3xl shadow-2xl ring-4 ring-primary/20"
+              className="ring-primary/20 relative aspect-square overflow-hidden rounded-3xl shadow-2xl ring-4"
             >
               <ExportedImage
                 src="/images/2.png"
@@ -128,14 +124,14 @@ export default function TeamSection() {
               <m.div
                 animate={{ opacity: [0.5, 0.7, 0.5] }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="from-secondary/60 via-secondary/40 to-secondary/50 absolute inset-0 bg-linear-to-t"
+                className="from-secondary/60 via-secondary/40 to-secondary/50 bg-linear-to-t absolute inset-0"
               />
 
               {/* Glow effect */}
               <m.div
                 animate={{ opacity: [0.2, 0.4, 0.2] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="from-primary/30 to-transparent absolute inset-0 bg-linear-to-br"
+                className="from-primary/30 bg-linear-to-br absolute inset-0 to-transparent"
               />
             </m.div>
 
@@ -145,19 +141,15 @@ export default function TeamSection() {
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              className="absolute -bottom-6 -start-6 rounded-2xl border-2 border-white/30 bg-white/95 p-6 shadow-2xl backdrop-blur-sm ring-2 ring-primary/20"
+              whileHover={{ scale: 1.05 }}
+              className="absolute -bottom-6 -start-6 rounded-2xl border border-white/30 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
             >
-              <m.div
-                animate={{ scale: [1, 1.05, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-                className="text-center"
-              >
+              <div className="text-center">
                 <div className="text-primary mb-1 text-4xl font-bold">15+</div>
-                <div className="text-sm font-medium text-gray-600">
+                <div className="text-sm font-semibold text-gray-600">
                   Years Experience
                 </div>
-              </m.div>
+              </div>
             </m.div>
           </m.div>
         </div>

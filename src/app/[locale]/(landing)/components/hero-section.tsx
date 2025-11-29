@@ -10,8 +10,7 @@ import { siteConfig } from "@/config/site";
 import { Link } from "@/i18n/navigation.public";
 
 export default function HeroSection() {
-  const t = useTranslations("LandingPage.hero");
-  const tAbout = useTranslations("LandingPage.about");
+  const t = useTranslations("IndexPage.hero");
 
   return (
     <section className="bg-secondary relative flex min-h-[700px] items-center overflow-hidden sm:min-h-[600px] lg:min-h-screen">
@@ -24,7 +23,9 @@ export default function HeroSection() {
           className="object-cover"
           priority
         />
-        <div className="bg-gradient-to-r from-secondary/10 via-secondary/10 to-secondary/70 absolute inset-0" />
+        <div className="from-secondary/20 via-secondary/30 to-secondary/80 absolute inset-0 bg-gradient-to-r" />
+        {/* Professional overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
       </div>
 
       {/* PDF Shape Overlay */}
@@ -49,7 +50,7 @@ export default function HeroSection() {
             x: [0, 100, 0],
             y: [0, 100, 0],
             scale: [1, 1.2, 1],
-            opacity: [0.1, 0.2, 0.1],
+            opacity: [0.1, 0.2, 0.1]
           }}
           transition={{ duration: 8, repeat: Infinity }}
           className="bg-primary absolute -end-40 -top-40 h-96 w-96 rounded-full blur-3xl"
@@ -59,7 +60,7 @@ export default function HeroSection() {
             x: [0, -100, 0],
             y: [0, -100, 0],
             scale: [1, 1.3, 1],
-            opacity: [0.08, 0.15, 0.08],
+            opacity: [0.08, 0.15, 0.08]
           }}
           transition={{ duration: 10, repeat: Infinity, delay: 1 }}
           className="bg-accent absolute -bottom-40 -start-40 h-96 w-96 rounded-full blur-3xl"
@@ -131,7 +132,7 @@ export default function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              className="h-auto gap-2 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-white/50 hover:bg-white/20"
+              className="h-auto gap-2 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-white/50 hover:bg-white/20 hover:text-white"
               asChild
             >
               <a href="#about">

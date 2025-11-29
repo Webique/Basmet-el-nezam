@@ -6,7 +6,7 @@ import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function WhyUsSection() {
-  const t = useTranslations("LandingPage.whyUs");
+  const t = useTranslations("IndexPage.whyUs");
 
   const features = [
     {
@@ -85,7 +85,7 @@ export default function WhyUsSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-primary/10 text-primary mb-4 inline-block rounded-full px-4 py-2 text-sm font-semibold"
+            className="bg-primary/10 text-primary mb-4 inline-block rounded-full px-5 py-2 text-sm font-semibold"
           >
             {t("title")}
           </m.div>
@@ -109,41 +109,22 @@ export default function WhyUsSection() {
                 className="group relative"
               >
                 <m.div
-                  whileHover={{ y: -5, scale: 1.02 }}
+                  whileHover={{ y: -5 }}
                   transition={{ duration: 0.3 }}
-                  className="hover:border-primary/50 relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
+                  className="hover:border-primary/40 relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:shadow-lg"
                 >
-                  {/* Background glow on hover */}
-                  <m.div
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    className="from-primary/20 to-transparent absolute inset-0 bg-linear-to-br"
-                  />
-
                   {/* Icon */}
-                  <m.div
-                    whileHover={{ scale: 1.15, rotate: [0, -5, 5, 0] }}
-                    transition={{ duration: 0.5 }}
-                    className="bg-primary mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl shadow-lg ring-2 ring-primary/30"
-                  >
-                    <Icon className="text-primary-foreground h-8 w-8" />
-                  </m.div>
+                  <div className="bg-primary mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl shadow-md">
+                    <Icon className="text-primary-foreground h-7 w-7" />
+                  </div>
 
                   {/* Content */}
-                  <h3 className="text-secondary-foreground mb-3 text-xl font-bold">
+                  <h3 className="text-secondary-foreground group-hover:text-primary mb-3 text-lg font-bold transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="leading-relaxed text-gray-300">
+                  <p className="text-sm leading-relaxed text-gray-300">
                     {feature.description}
                   </p>
-
-                  {/* Hover Glow */}
-                  <m.div
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                    className="from-primary/0 via-primary/50 to-primary/0 bg-linear-to-r absolute -inset-px rounded-2xl blur"
-                  />
                 </m.div>
               </m.div>
             );
@@ -158,11 +139,11 @@ export default function WhyUsSection() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="mx-auto max-w-3xl rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm lg:p-12">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm lg:p-10">
             <div className="mb-6 flex justify-center">
-              <div className="bg-primary flex h-20 w-20 items-center justify-center rounded-full shadow-2xl">
+              <div className="bg-primary flex h-16 w-16 items-center justify-center rounded-full shadow-lg">
                 <svg
-                  className="text-primary-foreground h-10 w-10"
+                  className="text-primary-foreground h-8 w-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -179,7 +160,7 @@ export default function WhyUsSection() {
             <h3 className="text-secondary-foreground mb-4 text-2xl font-bold lg:text-3xl">
               Licensed & Certified Law Firm
             </h3>
-            <p className="text-lg text-gray-300">
+            <p className="text-base leading-relaxed text-gray-300">
               Fully licensed and regulated by Saudi authorities, ensuring the
               highest standards of legal practice and client protection.
             </p>

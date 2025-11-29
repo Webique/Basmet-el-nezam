@@ -10,7 +10,7 @@ import { siteConfig } from "@/config/site";
 import { Link } from "@/i18n/navigation.public";
 
 export default function CTASection() {
-  const t = useTranslations("LandingPage.cta");
+  const t = useTranslations("IndexPage.cta");
 
   return (
     <section
@@ -80,7 +80,7 @@ export default function CTASection() {
               <m.div
                 animate={{ scale: [1, 1.1, 1], rotate: [0, 5, -5, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="flex h-24 w-24 items-center justify-center rounded-full bg-white/20 shadow-2xl backdrop-blur-sm ring-4 ring-white/20"
+                className="flex h-24 w-24 items-center justify-center rounded-full bg-white/20 shadow-2xl ring-4 ring-white/20 backdrop-blur-sm"
               >
                 <MessageCircle className="text-primary-foreground h-12 w-12" />
               </m.div>
@@ -125,7 +125,7 @@ export default function CTASection() {
               <m.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   size="lg"
-                  className="hover:shadow-3xl group h-auto gap-2 rounded-full bg-white px-8 py-4 text-base font-bold text-gray-900 shadow-2xl transition-all duration-300 hover:bg-gray-100 ring-4 ring-white/20"
+                  className="hover:shadow-3xl group h-auto gap-2 rounded-full bg-white px-8 py-4 text-base font-bold text-gray-900 shadow-2xl ring-4 ring-white/20 transition-all duration-300 hover:bg-gray-100"
                   asChild
                 >
                   <Link
@@ -149,7 +149,7 @@ export default function CTASection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="h-auto gap-2 rounded-full border-2 border-white bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 ring-2 ring-white/20"
+                  className="h-auto gap-2 rounded-full border-2 border-white bg-white/10 px-8 py-4 text-base font-bold text-white ring-2 ring-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/20"
                   asChild
                 >
                   <a href={`tel:${siteConfig.support.phone}`}>
@@ -182,13 +182,16 @@ export default function CTASection() {
                 <m.div
                   animate={{ rotate: [0, 10, -10, 0] }}
                   transition={{ duration: 2, repeat: Infinity }}
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm ring-2 ring-white/30"
+                  className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 ring-2 ring-white/30 backdrop-blur-sm"
                 >
                   <Phone className="h-5 w-5 text-white" />
                 </m.div>
                 <div className="text-left">
                   <div className="text-sm text-white/80">Phone</div>
-                  <div className="font-semibold text-white transition-colors group-hover:text-primary" dir="ltr">
+                  <div
+                    className="group-hover:text-primary font-semibold text-white transition-colors"
+                    dir="ltr"
+                  >
                     {siteConfig.support.phone}
                   </div>
                 </div>
@@ -205,7 +208,7 @@ export default function CTASection() {
                 <m.div
                   animate={{ rotate: [0, -10, 10, 0] }}
                   transition={{ duration: 2, delay: 0.5, repeat: Infinity }}
-                  className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm ring-2 ring-white/30"
+                  className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 ring-2 ring-white/30 backdrop-blur-sm"
                 >
                   <svg
                     className="h-5 w-5 text-white"
@@ -223,7 +226,7 @@ export default function CTASection() {
                 </m.div>
                 <div className="text-left">
                   <div className="text-sm text-white/80">Email</div>
-                  <div className="font-semibold text-white transition-colors group-hover:text-primary">
+                  <div className="group-hover:text-primary font-semibold text-white transition-colors">
                     {siteConfig.support.email}
                   </div>
                 </div>

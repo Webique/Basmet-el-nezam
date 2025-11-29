@@ -52,11 +52,16 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-secondary text-secondary-foreground border-border/40 relative border-t">
-      {/* Subtle decorative top accent */}
-      <div className="via-primary/20 bg-linear-to-r absolute start-0 top-0 h-px w-full from-transparent to-transparent" />
+    <footer className="bg-secondary text-secondary-foreground border-border/50 relative border-t">
+      {/* Elegant decorative top accent */}
+      <div className="via-primary/40 bg-linear-to-r absolute start-0 top-0 h-[2px] w-full from-transparent to-transparent" />
 
-      <div className="container relative mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 opacity-[0.02]">
+        <div className="pattern-grid h-full w-full" />
+      </div>
+
+      <div className="container relative mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         {/* Main Footer Content */}
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           {/* Company Info */}
@@ -68,18 +73,18 @@ const Footer = () => {
             className="lg:col-span-4"
           >
             <Logo
-              imgClassName="w-24 lg:w-28"
-              className="mb-5"
+              imgClassName="w-28 lg:w-32"
+              className="mb-6"
               width={333}
               height={197}
               src="/images/logos/1.png"
             />
-            <p className="text-secondary-foreground/70 mb-6 max-w-sm text-sm leading-relaxed">
+            <p className="text-secondary-foreground/80 mb-8 max-w-sm text-base leading-relaxed">
               {t("companyDescription")}
             </p>
 
             {/* Social Links */}
-            <div className="space-y-3">
+            <div className="space-y-4">
               <h4 className="text-sm font-bold uppercase tracking-wider text-white">
                 {t("followMe")}
               </h4>
@@ -92,14 +97,15 @@ const Footer = () => {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-secondary-foreground/70 hover:text-secondary-foreground bg-secondary-foreground/10 hover:bg-secondary-foreground/20 group flex h-10 w-10 items-center justify-center rounded-lg transition-all"
+                      className="text-secondary-foreground/80 hover:text-primary bg-secondary-foreground/10 hover:bg-primary/20 group relative flex h-12 w-12 items-center justify-center rounded-xl transition-all ring-1 ring-white/10 hover:ring-primary/30"
                       aria-label={social.label}
-                      whileHover={{ y: -2 }}
+                      whileHover={{ y: -3, scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <Icon
                         className={`h-5 w-5 ${index === 1 ? "fill-current" : "text-current"} transition-transform group-hover:scale-110`}
                       />
+                      <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                     </m.a>
                   );
                 })}
@@ -115,16 +121,17 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <h3 className="text-secondary-foreground mb-4 text-xs font-semibold uppercase tracking-wider">
+            <h3 className="text-secondary-foreground mb-6 text-sm font-bold uppercase tracking-wider text-white">
               {t("quickLinks")}
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-secondary-foreground/60 hover:text-secondary-foreground inline-flex items-center text-sm transition-colors"
+                    className="text-secondary-foreground/70 hover:text-primary group inline-flex items-center text-sm transition-all duration-300 hover:translate-x-1"
                   >
+                    <span className="mr-2 opacity-0 transition-all group-hover:opacity-100 group-hover:mr-3">→</span>
                     {link.label}
                   </a>
                 </li>
@@ -140,16 +147,17 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <h3 className="text-secondary-foreground mb-4 text-xs font-semibold uppercase tracking-wider">
+            <h3 className="text-secondary-foreground mb-6 text-sm font-bold uppercase tracking-wider text-white">
               {t("services")}
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.label}>
                   <a
                     href={service.href}
-                    className="text-secondary-foreground/60 hover:text-secondary-foreground inline-flex items-center text-sm transition-colors"
+                    className="text-secondary-foreground/70 hover:text-primary group inline-flex items-center text-sm transition-all duration-300 hover:translate-x-1"
                   >
+                    <span className="mr-2 opacity-0 transition-all group-hover:opacity-100 group-hover:mr-3">→</span>
                     {service.label}
                   </a>
                 </li>
@@ -165,58 +173,60 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-4"
           >
-            <h3 className="text-secondary-foreground mb-4 text-xs font-semibold uppercase tracking-wider">
+            <h3 className="text-secondary-foreground mb-6 text-sm font-bold uppercase tracking-wider text-white">
               {t("contactme")}
             </h3>
-            <div className="space-y-3">
-              <a
+            <div className="space-y-4">
+              <m.a
                 href={`tel:${siteConfig.support.phone}`}
-                className="group flex items-center gap-3 transition-colors"
+                className="group flex items-center gap-4 rounded-xl bg-white/5 p-4 transition-all duration-300 hover:bg-white/10 hover:shadow-lg"
+                whileHover={{ x: 4 }}
               >
-                <div className="bg-secondary-foreground/10 group-hover:bg-primary/20 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg transition-colors">
-                  <Phone className="text-secondary-foreground/60 group-hover:text-primary h-4 w-4 transition-colors" />
+                <div className="bg-primary/20 group-hover:bg-primary/30 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-all duration-300 ring-1 ring-primary/20 group-hover:ring-primary/40">
+                  <Phone className="text-primary h-5 w-5 transition-colors" />
                 </div>
                 <div>
-                  <div className="text-secondary-foreground/50 text-xs">
+                  <div className="text-secondary-foreground/60 text-xs font-medium uppercase tracking-wide">
                     {t("phone")}
                   </div>
                   <div
-                    className="text-secondary-foreground group-hover:text-primary text-sm transition-colors"
+                    className="text-secondary-foreground group-hover:text-primary text-base font-semibold transition-colors"
                     dir="ltr"
                   >
                     {siteConfig.support.phone}
                   </div>
                 </div>
-              </a>
+              </m.a>
 
-              <a
+              <m.a
                 href={`mailto:${siteConfig.support.email}`}
-                className="group flex items-center gap-3 transition-colors"
+                className="group flex items-center gap-4 rounded-xl bg-white/5 p-4 transition-all duration-300 hover:bg-white/10 hover:shadow-lg"
                 target="_blank"
                 rel="noopener noreferrer"
+                whileHover={{ x: 4 }}
               >
-                <div className="bg-secondary-foreground/10 group-hover:bg-primary/20 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg transition-colors">
-                  <Mail className="text-secondary-foreground/60 group-hover:text-primary h-4 w-4 transition-colors" />
+                <div className="bg-primary/20 group-hover:bg-primary/30 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-all duration-300 ring-1 ring-primary/20 group-hover:ring-primary/40">
+                  <Mail className="text-primary h-5 w-5 transition-colors" />
                 </div>
                 <div>
-                  <div className="text-secondary-foreground/50 text-xs">
+                  <div className="text-secondary-foreground/60 text-xs font-medium uppercase tracking-wide">
                     {t("email")}
                   </div>
-                  <div className="text-secondary-foreground group-hover:text-primary text-sm transition-colors">
+                  <div className="text-secondary-foreground group-hover:text-primary text-base font-semibold transition-colors">
                     {siteConfig.support.email}
                   </div>
                 </div>
-              </a>
+              </m.a>
 
-              <div className="flex items-center gap-3">
-                <div className="bg-secondary-foreground/10 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg">
-                  <MapPin className="text-secondary-foreground/60 h-4 w-4" />
+              <div className="flex items-center gap-4 rounded-xl bg-white/5 p-4">
+                <div className="bg-primary/20 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ring-1 ring-primary/20">
+                  <MapPin className="text-primary h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-secondary-foreground/50 text-xs">
+                  <div className="text-secondary-foreground/60 text-xs font-medium uppercase tracking-wide">
                     {t("location")}
                   </div>
-                  <div className="text-secondary-foreground text-sm">
+                  <div className="text-secondary-foreground text-base font-semibold">
                     {t("saudiArabia")}
                   </div>
                 </div>
@@ -231,11 +241,17 @@ const Footer = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
           viewport={{ once: true }}
-          className="mt-20 border-t border-white/10 pt-10 text-center"
+          className="mt-20 border-t border-white/10 pt-10"
         >
-          <p className="text-base text-gray-400">
-            {t("copyright", { year: currentYear })}
-          </p>
+          <div className="flex flex-col items-center justify-between gap-4 lg:flex-row">
+            <p className="text-sm text-gray-400">
+              {t("copyright", { year: currentYear })}
+            </p>
+            <div className="flex items-center gap-2 text-sm text-gray-400">
+              <span className="text-primary">●</span>
+              <span>{t("gacaCertified")}</span>
+            </div>
+          </div>
         </m.div>
       </div>
     </footer>

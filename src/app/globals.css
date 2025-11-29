@@ -56,7 +56,7 @@
 
   /* Legal Gold primary - Professional & Trustworthy */
   --primary: #C9A961;
-  --primary-foreground: #FFFFFF;
+  --primary-foreground: #000000;
 
   /* Secondary - Deep navy for professionalism */
   --secondary: #1E293B;
@@ -348,20 +348,38 @@
 
   /* Enhanced shadows */
   .shadow-elegant {
-    box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 40px -10px rgba(201, 169, 97, 0.3);
+  }
+
+  /* Professional gold glow */
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(201, 169, 97, 0.4);
+  }
+
+  .glow-primary-lg {
+    box-shadow: 0 0 40px rgba(201, 169, 97, 0.3);
   }
 
   /* Decorative patterns */
   .pattern-dots {
-    background-image: radial-gradient(circle, rgba(212, 175, 55, 0.1) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(201, 169, 97, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
   }
 
   .pattern-grid {
     background-image:
-      linear-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+      linear-gradient(rgba(201, 169, 97, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201, 169, 97, 0.05) 1px, transparent 1px);
     background-size: 40px 40px;
+  }
+
+  /* Professional gradient overlays */
+  .gradient-overlay-primary {
+    background: linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+  }
+
+  .gradient-overlay-secondary {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.1) 0%, rgba(15, 20, 25, 0.05) 100%);
   }
 }
 

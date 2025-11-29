@@ -15,7 +15,7 @@ import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function ServicesSection() {
-  const t = useTranslations("LandingPage.services");
+  const t = useTranslations("IndexPage.services");
 
   const services = [
     {
@@ -63,10 +63,10 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-linear-to-b from-gray-50 to-white py-20 lg:py-32"
+      className="relative overflow-hidden bg-white py-20 lg:py-28"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      {/* Subtle Background Pattern */}
+      <div className="absolute inset-0 opacity-[0.02]">
         <ExportedImage
           src="/images/patterns/5.png"
           alt="pattern"
@@ -74,18 +74,6 @@ export default function ServicesSection() {
           className="object-cover"
         />
       </div>
-
-      {/* Decorative Elements */}
-      <m.div
-        animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
-        transition={{ duration: 4, repeat: Infinity }}
-        className="bg-primary/5 absolute start-0 top-1/4 h-96 w-96 rounded-full blur-3xl"
-      />
-      <m.div
-        animate={{ scale: [1, 1.2, 1], opacity: [0.05, 0.1, 0.05] }}
-        transition={{ duration: 4, delay: 1, repeat: Infinity }}
-        className="absolute bottom-1/4 end-0 h-96 w-96 rounded-full bg-primary/5 blur-3xl"
-      />
 
       <div className="container relative mx-auto px-4">
         {/* Section Header */}
@@ -101,7 +89,7 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-primary/10 text-primary mb-4 inline-block rounded-full px-4 py-2 text-sm font-semibold"
+            className="bg-primary/10 text-primary mb-4 inline-block rounded-full px-5 py-2 text-sm font-semibold"
           >
             {t("title")}
           </m.div>
@@ -112,7 +100,7 @@ export default function ServicesSection() {
         </m.div>
 
         {/* Services Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -122,32 +110,21 @@ export default function ServicesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ y: -8, scale: 1.02 }}
-                className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 shadow-lg transition-all duration-300 hover:border-primary/30 hover:shadow-2xl"
+                whileHover={{ y: -5 }}
+                className="hover:border-primary/30 group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg"
               >
-                {/* Background gradient on hover */}
-                <m.div
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                  className="from-primary/5 to-transparent absolute inset-0 bg-linear-to-br"
-                />
-
                 {/* Icon */}
-                <m.div
-                  whileHover={{ rotate: [0, -10, 10, 0] }}
-                  transition={{ duration: 0.5 }}
-                  className="mb-6"
-                >
-                  <div className="bg-primary inline-flex h-16 w-16 items-center justify-center rounded-2xl shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl">
-                    <Icon className="text-primary-foreground h-8 w-8" />
+                <div className="mb-5">
+                  <div className="bg-primary inline-flex h-14 w-14 items-center justify-center rounded-xl shadow-md transition-all duration-300 group-hover:scale-105">
+                    <Icon className="text-primary-foreground h-7 w-7" />
                   </div>
-                </m.div>
+                </div>
 
                 {/* Content */}
-                <h3 className="mb-3 text-xl font-bold text-gray-900">
+                <h3 className="group-hover:text-primary mb-3 text-lg font-bold text-gray-900 transition-colors">
                   {service.title}
                 </h3>
-                <p className="leading-relaxed text-gray-600">
+                <p className="text-sm leading-relaxed text-gray-600">
                   {service.description}
                 </p>
 
@@ -156,15 +133,7 @@ export default function ServicesSection() {
                   initial={{ width: 0 }}
                   whileHover={{ width: "100%" }}
                   transition={{ duration: 0.3 }}
-                  className="from-primary to-primary/50 absolute bottom-0 start-0 h-1 bg-linear-to-r"
-                />
-
-                {/* Shine effect */}
-                <m.div
-                  initial={{ x: "-100%" }}
-                  whileHover={{ x: "100%" }}
-                  transition={{ duration: 0.6 }}
-                  className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent"
+                  className="bg-primary absolute bottom-0 start-0 h-1"
                 />
               </m.div>
             );
