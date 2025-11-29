@@ -3,7 +3,7 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/basmatallnidam",
     snapchat: "https://www.snapchat.com/@basmatallnidam",
     x: "https://x.com/basmatallnidam",
-    tiktok:"https://www.tiktok.com/@basmatallnidam",
+    tiktok: "https://www.tiktok.com/@basmatallnidam",
     whatsapp: "https://wa.me/966507058588"
   },
 
@@ -12,7 +12,6 @@ export const siteConfig = {
     email: "info@basmet-alnezam.sa",
     whatsapp: "+966507058588"
   },
-
 
   url: process.env.NEXT_PUBLIC_SITE_URL!,
   ogImage: `${process.env.NEXT_PUBLIC_SITE_URL!}/og.png`

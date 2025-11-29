@@ -19,36 +19,36 @@ const Footer = () => {
     { label: t("home"), href: "/" },
     { label: t("about"), href: "#about" },
     { label: t("myservices"), href: "#services" },
-    { label: t("myportfolio"), href: "#portfolio" },
+    { label: t("myportfolio"), href: "#portfolio" }
   ];
 
   const services = [
     { label: t("marketing"), href: "#services" },
     { label: t("development"), href: "#services" },
-    { label: t("consulting"), href: "#services" },
+    { label: t("consulting"), href: "#services" }
   ];
 
   const socialLinks = [
     {
       icon: Instagram,
       href: siteConfig.links.instagram,
-      label: t("socialMedia.instagram"),
+      label: t("socialMedia.instagram")
     },
     {
       icon: Tiktok,
       href: siteConfig.links.tiktok,
-      label: t("socialMedia.tiktok"),
+      label: t("socialMedia.tiktok")
     },
     {
       icon: Snapchat,
       href: siteConfig.links.snapchat,
-      label: t("socialMedia.snapchat"),
+      label: t("socialMedia.snapchat")
     },
     {
       icon: X,
       href: siteConfig.links.x,
-      label: t("socialMedia.x"),
-    },
+      label: t("socialMedia.x")
+    }
   ];
 
   return (
@@ -97,7 +97,7 @@ const Footer = () => {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-secondary-foreground/80 hover:text-primary bg-secondary-foreground/10 hover:bg-primary/20 group relative flex h-12 w-12 items-center justify-center rounded-xl transition-all ring-1 ring-white/10 hover:ring-primary/30"
+                      className="text-secondary-foreground/80 hover:text-primary bg-secondary-foreground/10 hover:bg-primary/20 hover:ring-primary/30 group relative flex h-12 w-12 items-center justify-center rounded-xl ring-1 ring-white/10 transition-all"
                       aria-label={social.label}
                       whileHover={{ y: -3, scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
@@ -105,7 +105,7 @@ const Footer = () => {
                       <Icon
                         className={`h-5 w-5 ${index === 1 ? "fill-current" : "text-current"} transition-transform group-hover:scale-110`}
                       />
-                      <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+                      <div className="from-primary/10 absolute inset-0 rounded-xl bg-gradient-to-br to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                     </m.a>
                   );
                 })}
@@ -131,7 +131,9 @@ const Footer = () => {
                     href={link.href}
                     className="text-secondary-foreground/70 hover:text-primary group inline-flex items-center text-sm transition-all duration-300 hover:translate-x-1"
                   >
-                    <span className="mr-2 opacity-0 transition-all group-hover:opacity-100 group-hover:mr-3">→</span>
+                    <span className="mr-2 opacity-0 transition-all group-hover:mr-3 group-hover:opacity-100">
+                      →
+                    </span>
                     {link.label}
                   </a>
                 </li>
@@ -157,7 +159,9 @@ const Footer = () => {
                     href={service.href}
                     className="text-secondary-foreground/70 hover:text-primary group inline-flex items-center text-sm transition-all duration-300 hover:translate-x-1"
                   >
-                    <span className="mr-2 opacity-0 transition-all group-hover:opacity-100 group-hover:mr-3">→</span>
+                    <span className="mr-2 opacity-0 transition-all group-hover:mr-3 group-hover:opacity-100">
+                      →
+                    </span>
                     {service.label}
                   </a>
                 </li>
@@ -182,7 +186,7 @@ const Footer = () => {
                 className="group flex items-center gap-4 rounded-xl bg-white/5 p-4 transition-all duration-300 hover:bg-white/10 hover:shadow-lg"
                 whileHover={{ x: 4 }}
               >
-                <div className="bg-primary/20 group-hover:bg-primary/30 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-all duration-300 ring-1 ring-primary/20 group-hover:ring-primary/40">
+                <div className="bg-primary/20 group-hover:bg-primary/30 ring-primary/20 group-hover:ring-primary/40 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ring-1 transition-all duration-300">
                   <Phone className="text-primary h-5 w-5 transition-colors" />
                 </div>
                 <div>
@@ -205,7 +209,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 whileHover={{ x: 4 }}
               >
-                <div className="bg-primary/20 group-hover:bg-primary/30 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-all duration-300 ring-1 ring-primary/20 group-hover:ring-primary/40">
+                <div className="bg-primary/20 group-hover:bg-primary/30 ring-primary/20 group-hover:ring-primary/40 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ring-1 transition-all duration-300">
                   <Mail className="text-primary h-5 w-5 transition-colors" />
                 </div>
                 <div>
@@ -219,7 +223,7 @@ const Footer = () => {
               </m.a>
 
               <div className="flex items-center gap-4 rounded-xl bg-white/5 p-4">
-                <div className="bg-primary/20 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ring-1 ring-primary/20">
+                <div className="bg-primary/20 ring-primary/20 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ring-1">
                   <MapPin className="text-primary h-5 w-5" />
                 </div>
                 <div>
