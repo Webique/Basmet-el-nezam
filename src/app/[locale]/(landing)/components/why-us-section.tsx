@@ -158,11 +158,10 @@ export default function WhyUsSection() {
               </div>
             </div>
             <h3 className="text-secondary-foreground mb-4 text-2xl font-bold lg:text-3xl">
-              Licensed & Certified Law Firm
+              {t("cta.title")}
             </h3>
             <p className="text-base leading-relaxed text-gray-300">
-              Fully licensed and regulated by Saudi authorities, ensuring the
-              highest standards of legal practice and client protection.
+              {t("cta.description")}
             </p>
           </div>
         </m.div>
