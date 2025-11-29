@@ -141,7 +141,7 @@ export default function TeamSection() {
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.05 }}
-              className="absolute -bottom-6 -start-6 rounded-2xl border border-white/30 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
+              className="absolute -bottom-6 -start-2 rounded-2xl border border-white/30 bg-white/95 p-6 shadow-xl backdrop-blur-sm sm:-start-6"
             >
               <div className="text-center">
                 <div className="text-primary mb-1 text-4xl font-bold">

@@ -15,12 +15,12 @@ export default function HeroSection() {
   return (
     <section className="bg-secondary relative flex min-h-[700px] items-center overflow-hidden sm:min-h-[600px] lg:min-h-screen">
       {/* Full Background Image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 isolate">
         <ExportedImage
           src="/images/hero.jpg"
           alt="Background"
           fill
-          className="object-cover"
+          className="z-[-1] object-cover"
           priority
         />
         <div className="from-secondary/20 via-secondary/30 to-secondary/80 absolute inset-0 bg-gradient-to-r" />
@@ -40,6 +40,7 @@ export default function HeroSection() {
           alt="pattern"
           fill
           className="object-cover mix-blend-overlay"
+          priority
         />
       </m.div>
 
