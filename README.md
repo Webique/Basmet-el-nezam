@@ -1,12 +1,24 @@
-# Abdullah Omar Photography Portfolio
+# Basmet el Nezam
 
-Professional photography portfolio website for Abdullah Omar - Photographer & Creative Producer.
+This is the source code for the official website of Basmet el Nezam.
 
 This is a [Next.js](https://nextjs.org) project with internationalization support (Arabic/English).
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
