@@ -9,14 +9,17 @@
       "ctaSecondary": "Learn More"
     },
     "about": {
-      "title": "About Basmet Al-Nezam",
-      "subtitle": "Your Strategic Legal Partner",
-      "description": "We are a Saudi company that combines deep legal expertise with renewed legal vision, specializing in providing professional legal services and consultations with high professionalism. We provide comprehensive legal solutions for individuals and companies, believing that trust and credibility are the foundation of legal success.",
-      "description2": "We believe that trust is built on details, and that every case is a responsibility managed with care and complete confidentiality. Therefore, we ensure that our legal mark is clear in the quality of work, professionalism of performance, and client satisfaction.",
-      "experience": "Years of Experience",
-      "cases": "Successful Cases",
-      "clients": "Satisfied Clients",
-      "awards": "Awards & Recognition"
+        "title": "About Bassama Al-Nizam",
+        "subtitle": "Bassama Al-Nizam Law Office",
+        "description": "Bassama Al-Nizam Law Office for Legal Advocacy and Consultation is considered a leading reference in providing specialized legal services, combining deep expertise and enlightened vision to achieve justice and protect rights.",
+        "description2": "The office distinguishes itself by providing integrated legal consultations in commercial cases, criminal cases, and personal status matters, while committed to defending women's rights and human rights. It serves a wide range of clients providing effective legal solutions based on professionalism and precision.",
+        "description3": "With its classic elegant style, the office seeks to leave a distinctive mark in the field of law, embodying values of justice and integrity, and is keen on building relationships based on trust and credibility with its clients.",
+        "title2": "We are a Saudi Company",
+        "subtitle2": "We combine deep systematic expertise and renewed legal vision",
+        "description4": "Specialized in providing legal services and consultations with high professionalism and providing comprehensive legal solutions for individuals and companies, and we believe that trust and credibility are the foundation of legal success.",
+        "description5": "We are more than just a law firm; we are a strategic legal partner that provides precise solutions and builds trust with expertise and paves the path of justice with professionalism.",
+        "description6": "We believe that trust is built on details and that every case is a responsibility carefully managed and handled with complete confidentiality.",
+        "description7": "Therefore, we are committed to ensuring that our legal mark is clear in work quality and professional performance."
     },
     "services": {
       "title": "Our Services",

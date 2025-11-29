@@ -75,9 +75,9 @@ export default function Header() {
                   className={cn(
                     "group relative px-4 py-2 text-base font-medium text-white transition-all duration-300",
                     "hover:text-primary",
-                    "before:absolute before:bottom-0 before:start-1/2 before:h-0.5 before:w-0",
+                    "before:absolute before:bottom-0 before:left-1/2 before:h-0.5 before:w-0 rtl:before:right-1/2",
                     "before:from-primary before:to-primary/60 before:bg-gradient-to-r",
-                    "before:-translate-x-1/2 before:transition-all before:duration-300",
+                    "before:-translate-x-1/2 before:transition-all before:duration-300 rtl:before:translate-x-1/2",
                     "hover:before:w-3/4",
                     "after:bg-primary/5 after:absolute after:inset-0 after:rounded-lg",
                     "after:opacity-0 after:transition-opacity after:duration-300",

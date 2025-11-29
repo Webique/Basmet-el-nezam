@@ -14,7 +14,7 @@ export default function PortfolioSection() {
       category: t("case1.category")
     },
     {
-      image: "/images/8.png",
+      image: "/images/about.png",
       title: t("case2.title"),
       category: t("case2.category")
     },
