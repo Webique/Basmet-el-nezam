@@ -1,7 +1,7 @@
 {
   "IndexPage": {
     "WhatsAppFloat": {
-      "tooltip": "Contact us via WhatsApp"
+      "tooltip": "Contact us via WhatsApp for legal consultation"
     }
   },
   "Error": {
@@ -17,20 +17,18 @@
     "backToHome": "Back to home"
   },
   "LocaleLayout": {
-    "name": "Mohammed Al Faraj Photography | Professional Drone Photographer & Cameraman",
-    "short_name": "Mohammed Al Faraj",
-    "description": "GACA-certified commercial drone pilot specializing in aerial photography, videography, and ground cinematography. Serving major clients including Saudi Aramco, Ministry of Defence, and Saudi League.",
+    "name": "Basmet Al-Nezam Law Firm | Professional Legal Services",
+    "short_name": "Basmet Al-Nezam",
+    "description": "Leading law firm in Saudi Arabia providing comprehensive legal services including corporate law, litigation, arbitration, and legal consultancy.",
     "keywords": [
-      "Mohammed Al Faraj",
-      "Drone Photography",
-      "Aerial Photography",
-      "GACA Certified",
-      "Commercial Drone Pilot",
-      "Videography",
+      "Basmet Al-Nezam",
+      "Law Firm",
+      "Legal Services",
       "Saudi Arabia",
-      "Eastern Province",
-      "Industrial Photography",
-      "Construction Documentation"
+      "Corporate Law",
+      "Litigation",
+      "Arbitration",
+      "Legal Consultancy"
     ]
   },
   "LocaleSwitcher": {
@@ -40,44 +38,204 @@
   "Header": {
     "nav": {
       "home": "Home",
-      "about": "About",
+      "about": "About Us",
       "services": "Services",
-      "myservices": "My Services",
-      "myportfolio": "My Portfolio",
-      "contactme": "Contact Me"
+      "myservices": "Our Services",
+      "myportfolio": "Our Work",
+      "contactme": "Contact Us"
     },
-    "cta": "Book Now",
-    "siteName": "Mohammed Al Faraj",
-    "siteDescription": "Professional Drone Photographer"
+    "cta": "Consult Now",
+    "siteName": "Basmet Al-Nezam",
+    "siteDescription": "Law Firm"
+  },
+  "LandingPage": {
+    "hero": {
+      "title": "Where Justice Meets Excellence",
+      "subtitle": "Basmet Al-Nezam Law Firm",
+      "tagline": "We Leave Our Mark",
+      "description": "We are more than just a law firm - we are your strategic legal partner, providing precise solutions, building trust through expertise, and charting the path to justice with professionalism.",
+      "cta": "Get Legal Consultation",
+      "ctaSecondary": "Learn More"
+    },
+    "about": {
+      "title": "About Basmet Al-Nezam",
+      "subtitle": "Your Strategic Legal Partner",
+      "description": "We are a Saudi company that combines deep legal expertise with renewed legal vision, specializing in providing professional legal services and consultations with high professionalism. We provide comprehensive legal solutions for individuals and companies, believing that trust and credibility are the foundation of legal success.",
+      "description2": "We believe that trust is built on details, and that every case is a responsibility managed with care and complete confidentiality. Therefore, we ensure that our legal mark is clear in the quality of work, professionalism of performance, and client satisfaction.",
+      "experience": "Years of Experience",
+      "cases": "Successful Cases",
+      "clients": "Satisfied Clients",
+      "awards": "Awards & Recognition"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive Legal Solutions with Trust and Professionalism",
+      "litigation": {
+        "title": "Litigation & Court Representation",
+        "description": "Representing clients before courts in personal, commercial, criminal, and enforcement cases with professionalism."
+      },
+      "pleadings": {
+        "title": "Legal Pleadings & Memoranda",
+        "description": "Filing lawsuits, enforcement requests, defense memoranda, appeals, and cassation requests on platforms (Najiz, Muin, Dispute Committees)."
+      },
+      "consultation": {
+        "title": "Legal Consultations",
+        "description": "Providing accurate consultations based on regulations and laws to help clients make correct legal decisions."
+      },
+      "corporate": {
+        "title": "Company Formation",
+        "description": "Establishing and registering companies and legal entities according to Saudi regulations with contract drafting and legal representation."
+      },
+      "arbitration": {
+        "title": "Arbitration & Dispute Resolution",
+        "description": "Providing alternative dispute resolution solutions through arbitration and legal mediation to ensure quick case resolution."
+      },
+      "debt": {
+        "title": "Debt Collection Services",
+        "description": "Collecting financial debts professionally through amicable or judicial means with legal procedures to ensure rights recovery."
+      },
+      "government": {
+        "title": "Government Departments Review",
+        "description": "Following up on transactions, completing procedures, issuing powers of attorney, and representing clients at public prosecution offices and police stations."
+      },
+      "bankruptcy": {
+        "title": "Bankruptcy Services",
+        "description": "Comprehensive bankruptcy services including filing applications, following settlement procedures, financial reorganization, and representation before judicial authorities."
+      },
+      "contracts": {
+        "title": "Contract Drafting & Legal Review",
+        "description": "Preparing, reviewing, and drafting commercial and civil contracts of all types while ensuring protection of clients' rights and legal obligations."
+      },
+      "compliance": {
+        "title": "Regulatory Compliance",
+        "description": "Ensuring companies and individuals comply with Saudi regulations and laws, providing consultations on legal and regulatory requirements."
+      }
+    },
+    "whyUs": {
+      "title": "Why Choose Us",
+      "subtitle": "Your Success is Our Priority",
+      "expertise": {
+        "title": "Legal Expertise",
+        "description": "Highly qualified attorneys with extensive experience in Saudi law."
+      },
+      "trust": {
+        "title": "Trust & Integrity",
+        "description": "We maintain the highest standards of professional ethics and confidentiality."
+      },
+      "results": {
+        "title": "Proven Results",
+        "description": "Track record of successful outcomes for our clients."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Available whenever you need legal assistance."
+      }
+    },
+    "cta": {
+      "title": "Need Legal Assistance?",
+      "description": "Contact us today for a consultation with our experienced legal team.",
+      "button": "Schedule Consultation"
+    },
+    "portfolio": {
+      "title": "Our Work",
+      "subtitle": "Successful Cases",
+      "description": "A selection of our successful legal cases and achievements.",
+      "case1": {
+        "title": "Corporate Merger Success",
+        "category": "Corporate Law"
+      },
+      "case2": {
+        "title": "Commercial Dispute Resolution",
+        "category": "Litigation"
+      },
+      "case3": {
+        "title": "International Arbitration",
+        "category": "Arbitration"
+      },
+      "case4": {
+        "title": "Regulatory Compliance",
+        "category": "Compliance"
+      }
+    },
+    "values": {
+      "title": "Our Legal Identity",
+      "subtitle": "Our Values, Vision, and Mission",
+      "vision": {
+        "title": "Our Vision",
+        "description": "Providing legal services that keep pace with legislative development and achieve justice with trust and credibility"
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "We strive to make justice and professionalism your companion in every legal path"
+      },
+      "values": {
+        "title": "Our Values",
+        "integrity": "Integrity",
+        "confidentiality": "Confidentiality",
+        "commitment": "Commitment",
+        "efficiency": "Efficiency",
+        "innovation": "Legal Innovation"
+      }
+    },
+    "team": {
+      "title": "Our Legal Team",
+      "subtitle": "Elite Lawyers and Consultants",
+      "description": "Our legal team comprises elite lawyers and consultants with diverse experience in various legal fields, committed to providing accurate and reliable legal solutions that comply with local and international regulations.",
+      "description2": "We don't just provide consultations and litigation, but we ensure to provide comprehensive legal strategies aimed at protecting our clients' interests and achieving their goals efficiently and professionally.",
+      "expertise1": "Handling Complex Cases",
+      "expertise2": "Contract Drafting",
+      "expertise3": "Company Formation",
+      "expertise4": "Arbitration & Dispute Resolution",
+      "expertise5": "Continuous Legal Follow-up"
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "subtitle": "What Our Clients Say",
+      "testimonial1": {
+        "name": "Ahmed Al-Rashid",
+        "role": "CEO, Tech Company",
+        "content": "Exceptional legal expertise and professionalism. They handled our corporate matters with great care and attention to detail."
+      },
+      "testimonial2": {
+        "name": "Fatima Al-Zahrani",
+        "role": "Business Owner",
+        "content": "Outstanding service and results. The team was always available and provided clear guidance throughout our legal process."
+      },
+      "testimonial3": {
+        "name": "Mohammed Al-Qahtani",
+        "role": "Real Estate Developer",
+        "content": "Highly recommended! Their knowledge of Saudi law and dedication to client success is unmatched."
+      }
+    }
   },
   "Footer": {
     "home": "Home",
-    "about": "About",
-    "myservices": "My Services",
+    "about": "About Us",
+    "myservices": "Our Services",
     "services": "Services",
-    "myportfolio": "My Portfolio",
-    "contactme": "Contact Me",
+    "myportfolio": "Our Work",
+    "contactme": "Contact Us",
     "quickLinks": "Quick Links",
     "contactUs": "Contact",
-    "connectWithMe": "Connect With Me",
+    "connectWithMe": "Connect With Us",
     "phone": "Phone",
     "email": "Email",
     "location": "Location",
-    "copyright": "© {year} Mohammed Al Faraj Photography. All rights reserved",
-    "companyDescription": "GACA-certified commercial drone pilot delivering high-quality aerial imaging solutions with technical precision and cinematic vision.",
-    "marketing": "Aerial Photography",
-    "development": "Industrial Documentation",
-    "consulting": "Event Coverage",
-    "saudiArabia": "Eastern Province, Saudi Arabia",
+    "copyright": "© {year} Basmet Al-Nezam Law Firm. All rights reserved",
+    "companyDescription": "Leading law firm providing comprehensive legal services with expertise, integrity, and commitment to excellence.",
+    "marketing": "Corporate Law",
+    "development": "Litigation",
+    "consulting": "Legal Consultation",
+    "saudiArabia": "Riyadh, Saudi Arabia",
     "available24_7": "Available 24/7",
-    "followMe":"Follow Me",
+    "followMe":"Follow Us",
     "socialMedia": {
       "instagram": "Instagram",
       "linkedin": "LinkedIn",
       "email": "Email",
       "whatsapp": "WhatsApp"
     },
-    "gacaCertified": "GACA Certified",
-    "certificateNumber": "FL-479717920"
+    "gacaCertified": "Licensed Law Firm",
+    "certificateNumber": "License No. 12345"
   }
 }

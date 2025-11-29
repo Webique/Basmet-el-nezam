@@ -1,17 +1,17 @@
 export const siteConfig = {
   links: {
-    instagram: "https://www.instagram.com/mohammad_al_faraj",
-    linkedin: "https://www.linkedin.com/in/mohammed-al-faraj-2163428a",
-    whatsapp: "https://wa.me/966554987612"
+    instagram: "https://www.instagram.com/basmet_alnezam",
+    linkedin: "https://www.linkedin.com/company/basmet-alnezam",
+    whatsapp: "https://wa.me/966920000861"
   },
 
   support: {
-    phone: "+966-554 987612",
-    email: "mfra2002@hotmail.com",
-    whatsapp: "+966554987612"
+    phone: "+966-92 000 0861",
+    email: "info@basmet-alnezam.sa",
+    whatsapp: "+966920000861"
   },
 
-  certificate: "FL-479717920",
+  certificate: "License-12345",
 
   url: process.env.NEXT_PUBLIC_SITE_URL!,
   ogImage: `${process.env.NEXT_PUBLIC_SITE_URL!}/og.png`

@@ -57,7 +57,7 @@ export default function Header() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="flex h-full items-center gap-3"
           >
-            <Logo imgClassName="brightness-0 invert filter" />
+            <Logo />
           </m.div>
 
           {/* Desktop Navigation */}

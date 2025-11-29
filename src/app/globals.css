@@ -54,21 +54,21 @@
   --popover: #1C2128;
   --popover-foreground: #E8E9ED;
 
-  /* Cinematic Gold primary - Premium Photography & Film */
-  --primary: #D4AF37;
-  --primary-foreground: #0A0A0A;
+  /* Legal Gold primary - Professional & Trustworthy */
+  --primary: #C9A961;
+  --primary-foreground: #FFFFFF;
 
-  /* Secondary - Deep charcoal for footer */
-  --secondary: #0A0D11;
-  --secondary-foreground: #E8E9ED;
+  /* Secondary - Deep navy for professionalism */
+  --secondary: #1E293B;
+  --secondary-foreground: #F8FAFC;
 
   /* Muted elements - Dark blue-gray */
   --muted: #161B22;
   --muted-foreground: #9BA3AF;
 
-  /* Accent - Warm gold variation */
-  --accent: #E5C158;
-  --accent-foreground: #0A0A0A;
+  /* Accent - Lighter gold variation */
+  --accent: #D4AF37;
+  --accent-foreground: #1E293B;
 
   /* Destructive */
   --destructive: #EF4444;
