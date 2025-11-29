@@ -27,21 +27,6 @@ export default function CTASection() {
         />
       </div>
 
-      <m.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.05 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="absolute left-0 top-1/2 h-1/2 w-1/3 -translate-y-1/2"
-      >
-        <ExportedImage
-          src="/images/patterns/6.png"
-          alt="pattern"
-          fill
-          className="object-contain mix-blend-overlay"
-        />
-      </m.div>
-
       {/* Decorative Elements */}
       <m.div
         animate={{ scale: [1, 1.3, 1], opacity: [0.1, 0.2, 0.1] }}
@@ -99,7 +84,7 @@ export default function CTASection() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="text-primary-foreground text-4xl font-bold drop-shadow-lg lg:text-6xl"
+                className="text-primary-foreground text-4xl font-bold lg:text-6xl"
               >
                 {t("title")}
               </m.h2>
@@ -159,7 +144,7 @@ export default function CTASection() {
                     >
                       <Phone className="size-5" />
                     </m.div>
-                    Call Now
+                    {t("callNowButton")}
                   </a>
                 </Button>
               </m.div>
@@ -186,8 +171,8 @@ export default function CTASection() {
                 >
                   <Phone className="h-5 w-5 text-white" />
                 </m.div>
-                <div className="text-left">
-                  <div className="text-sm text-white/80">Phone</div>
+                <div className="text-start">
+                  <div className="text-sm text-white/80">{t("phone")}</div>
                   <div
                     className="group-hover:text-primary font-semibold text-white transition-colors"
                     dir="ltr"
@@ -224,8 +209,8 @@ export default function CTASection() {
                     />
                   </svg>
                 </m.div>
-                <div className="text-left">
-                  <div className="text-sm text-white/80">Email</div>
+                <div className="text-start">
+                  <div className="text-sm text-white/80">{t("email")}</div>
                   <div className="group-hover:text-primary font-semibold text-white transition-colors">
                     {siteConfig.support.email}
                   </div>

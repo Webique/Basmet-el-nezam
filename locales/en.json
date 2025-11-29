@@ -65,6 +65,14 @@
         "description": "Ensuring companies and individuals comply with Saudi regulations and laws, providing consultations on legal and regulatory requirements."
       }
     },
+    "cta": {
+      "title": "Do you need legal assistance?",
+      "description": "Contact us today for a consultation with our experienced legal team.",
+      "button": "Schedule a Consultation",
+      "callNowButton": "Call Now",
+      "phone": "Phone",
+      "email": "Email"
+    },
     "whyUs": {
       "title": "Why Choose Us",
       "subtitle": "Your Success is Our Priority",
