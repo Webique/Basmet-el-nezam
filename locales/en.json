@@ -119,6 +119,7 @@
         "content": "Exceptional legal expertise and professionalism. They handled our corporate matters with great care and attention to detail."
       },
       "testimonial2": {
+        "name": "Fatima Al-Zahrani",
         "role": "Business Owner",
         "content": "Outstanding service and results. The team was always available and provided clear guidance throughout our legal process."
       },
@@ -130,6 +131,48 @@
     },
     "WhatsAppFloat": {
       "tooltip": "Contact us via WhatsApp"
+    },
+    "portfolio": {
+      "title": "Our Work",
+      "subtitle": "Successful Cases",
+      "description": "A selection of our successful legal cases and achievements.",
+      "case1": {
+        "title": "Successful Corporate Merger",
+        "category": "Corporate Law"
+      },
+      "case2": {
+        "title": "Commercial Dispute Resolution",
+        "category": "Litigation"
+      },
+      "case3": {
+        "title": "International Arbitration",
+        "category": "Arbitration"
+      },
+      "case4": {
+        "title": "Regulatory Compliance",
+        "category": "Compliance"
+      }
+    },
+    "values": {
+      "title": "Our Legal Identity",
+      "subtitle": "Our Values, Vision, and Mission",
+      "vision": {
+        "title": "Our Vision",
+        "description": "To provide legal services that keep pace with legislative developments and achieve justice with trust and credibility."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "description": "We strive to make justice and professionalism your companion in every legal path."
+      },
+      "values": {
+        "title": "Our Values",
+        "description": "Integrity, confidentiality, commitment, efficiency, and innovation are the pillars of our service to our clients.",
+        "integrity": "Integrity",
+        "confidentiality": "Confidentiality",
+        "commitment": "Commitment",
+        "efficiency": "Efficiency",
+        "innovation": "Legal Innovation"
+      }
     }
   },
   "Error": {
