@@ -134,7 +134,7 @@ export default function CTASection() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="h-auto gap-2 rounded-full border-2 border-white bg-white/10 px-8 py-4 text-base font-bold text-white ring-2 ring-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/20"
+                  className="h-auto gap-2 rounded-full border-2 border-white bg-white/10 px-8 py-4 text-base font-bold text-white ring-2 ring-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:text-white"
                   asChild
                 >
                   <a href={`tel:${siteConfig.support.phone}`}>
@@ -174,7 +174,7 @@ export default function CTASection() {
                 <div className="text-start">
                   <div className="text-sm text-white/80">{t("phone")}</div>
                   <div
-                    className="group-hover:text-primary font-semibold text-white transition-colors"
+                    className="font-semibold text-white transition-colors"
                     dir="ltr"
                   >
                     {siteConfig.support.phone}
@@ -211,7 +211,7 @@ export default function CTASection() {
                 </m.div>
                 <div className="text-start">
                   <div className="text-sm text-white/80">{t("email")}</div>
-                  <div className="group-hover:text-primary font-semibold text-white transition-colors">
+                  <div className="font-semibold text-white transition-colors">
                     {siteConfig.support.email}
                   </div>
                 </div>
