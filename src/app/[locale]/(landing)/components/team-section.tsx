@@ -134,24 +134,6 @@ export default function TeamSection() {
                 className="from-primary/30 bg-linear-to-br absolute inset-0 to-transparent"
               />
             </m.div>
-
-            {/* Floating Badge */}
-            <m.div
-              initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05 }}
-              className="absolute -bottom-6 -start-2 rounded-2xl border border-white/30 bg-white/95 p-6 shadow-xl backdrop-blur-sm sm:-start-6"
-            >
-              <div className="text-center">
-                <div className="text-primary mb-1 text-4xl font-bold">
-                  {t("experience_years")}
-                </div>
-                <div className="text-sm font-semibold text-gray-600">
-                  {t("experience_title")}
-                </div>
-              </div>
-            </m.div>
           </m.div>
         </div>
       </div>

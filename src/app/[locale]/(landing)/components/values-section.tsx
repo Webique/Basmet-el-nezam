@@ -29,18 +29,8 @@ export default function ValuesSection() {
           viewport={{ once: true }}
           className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <m.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="bg-primary/10 text-primary mb-4 inline-block rounded-full px-5 py-2 text-sm font-semibold"
-          >
+          <h2 className="mb-4 text-4xl font-bold text-primary lg:text-5xl">
             {t("title")}
-          </m.div>
-
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 lg:text-5xl">
-            {t("subtitle")}
           </h2>
         </m.div>
 

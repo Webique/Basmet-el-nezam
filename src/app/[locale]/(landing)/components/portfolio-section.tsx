@@ -54,6 +54,10 @@ export default function PortfolioSection() {
           viewport={{ once: true }}
           className="mx-auto mb-16 max-w-3xl text-center"
         >
+          <h2 className="mb-4 text-4xl font-bold text-primary lg:text-5xl">
+            {t("subtitle")}
+          </h2>
+          
           <m.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -63,10 +67,7 @@ export default function PortfolioSection() {
           >
             {t("title")}
           </m.div>
-
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 lg:text-5xl">
-            {t("subtitle")}
-          </h2>
+          
           <p className="text-lg text-gray-600">{t("description")}</p>
         </m.div>
 

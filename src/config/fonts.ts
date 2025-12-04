@@ -1,7 +1,7 @@
-import { IBM_Plex_Sans_Arabic } from "next/font/google";
+import { Cairo } from "next/font/google";
 
-export const primaryFont = IBM_Plex_Sans_Arabic({
-  weight: ["300", "400", "500", "600", "700"],
+export const primaryFont = Cairo({
+  weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["arabic", "latin"],
   display: "swap"
 });

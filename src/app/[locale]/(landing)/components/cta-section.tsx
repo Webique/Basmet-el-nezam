@@ -133,8 +133,7 @@ export default function CTASection() {
               <m.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="h-auto gap-2 rounded-full border-2 border-white bg-white/10 px-8 py-4 text-base font-bold text-white ring-2 ring-white/20 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:text-white"
+                  className="hover:shadow-3xl group h-auto gap-2 rounded-full bg-white px-8 py-4 text-base font-bold text-gray-900 shadow-2xl ring-4 ring-white/20 transition-all duration-300 hover:bg-gray-100"
                   asChild
                 >
                   <a href={`tel:${siteConfig.support.phone}`}>
