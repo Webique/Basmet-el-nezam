@@ -74,28 +74,38 @@ export default function HeroSection() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-[600px] space-y-8"
+          className="max-w-[600px] space-y-6"
         >
-          {/* Badge */}
-          <m.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-primary/20 text-primary border-primary/30 inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-bold backdrop-blur-sm"
-          >
-            <div className="bg-primary h-2 w-2 animate-pulse rounded-full" />
-            {t("subtitle")}
-          </m.div>
-
-          {/* Title */}
+          {/* Main Title - Company Name (Bold) */}
           <m.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl whitespace-nowrap"
+          >
+            {t("subtitle")}
+          </m.h1>
+
+          {/* Subtitle - Tagline (Medium weight, single line) */}
+          <m.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-5xl font-medium leading-tight text-white sm:text-6xl lg:text-7xl whitespace-nowrap"
+            className="text-xl font-medium leading-tight text-white sm:text-2xl lg:text-3xl whitespace-nowrap"
           >
             {t("title")}
-          </m.h1>
+          </m.p>
+
+          {/* Badge - Below the titles */}
+          <m.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="bg-primary/20 text-primary border-primary/30 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-base font-medium backdrop-blur-sm"
+          >
+            <div className="bg-primary h-2 w-2 animate-pulse rounded-full" />
+            {t("tagline")}
+          </m.div>
 
           {/* Description */}
           <m.p
