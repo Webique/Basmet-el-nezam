@@ -81,7 +81,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl whitespace-nowrap"
+            className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl whitespace-nowrap"
           >
             {t("subtitle")}
           </m.h1>
@@ -96,22 +96,11 @@ export default function HeroSection() {
             {t("title")}
           </m.p>
 
-          {/* Badge - Below the titles */}
-          <m.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-primary/20 text-primary border-primary/30 inline-flex items-center gap-2 rounded-full border px-4 py-2 text-base font-medium backdrop-blur-sm"
-          >
-            <div className="bg-primary h-2 w-2 animate-pulse rounded-full" />
-            {t("tagline")}
-          </m.div>
-
           {/* Description */}
           <m.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg leading-relaxed text-gray-300 lg:text-xl"
           >
             {t("description")}
