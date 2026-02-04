@@ -81,7 +81,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl whitespace-nowrap"
+            className="text-3xl font-bold leading-tight text-white sm:text-4xl sm:whitespace-nowrap lg:text-5xl"
           >
             {t("subtitle")}
           </m.h1>
